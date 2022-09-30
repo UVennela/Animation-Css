@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+
+}
+
+.demo {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+    color: beige;
+    text-align: center;
+    margin-top: 20%;
+  }
+  .demo .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+  }

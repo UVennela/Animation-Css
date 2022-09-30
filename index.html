@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+    <h1 class="demo">
+        <span class="letters letters-1">hey!</span>
+        <span class="letters letters-2">I'm</span>
+        <span class="letters letters-3">Vennela!</span>
+      </h1>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+      <script>
+        var demo = {};
+demo.opacityIn = [0,1];
+demo.scaleIn = [0.2, 1];
+demo.scaleOut = 3;
+demo.durationIn = 800;
+demo.durationOut = 600;
+demo.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.demo .letters-1',
+    opacity: demo.opacityIn,
+    scale: demo.scaleIn,
+    duration: demo.durationIn
+  }).add({
+    targets: '.demo .letters-1',
+    opacity: 0,
+    scale: demo.scaleOut,
+    duration: demo.durationOut,
+    easing: "easeInExpo",
+    delay: demo.delay
+  }).add({
+    targets: '.demo .letters-2',
+    opacity: demo.opacityIn,
+    scale: demo.scaleIn,
+    duration: demo.durationIn
+  }).add({
+    targets: '.demo .letters-2',
+    opacity: 0,
+    scale: demo.scaleOut,
+    duration: demo.durationOut,
+    easing: "easeInExpo",
+    delay: demo.delay
+  }).add({
+    targets: '.demo .letters-3',
+    opacity: demo.opacityIn,
+    scale: demo.scaleIn,
+    duration: demo.durationIn
+  }).add({
+    targets: '.demo .letters-3',
+    opacity: 0,
+    scale: demo.scaleOut,
+    duration: demo.durationOut,
+    easing: "easeInExpo",
+    delay: demo.delay
+  }).add({
+    targets: '.demo',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+      </script>
+</body>
+</html>
